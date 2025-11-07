@@ -28,7 +28,7 @@ const handleChange = (event: Event) => {
   emit('update:modelValue', target.value)
 }
 
-const selectId = computed(() => `select-${Math.random().toString(36).substring(7)}`)
+const selectId = useId()
 
 const selectClasses = computed(() => [
   'w-full px-4 py-2.5 rounded-lg border transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-1',

@@ -5,9 +5,7 @@ interface Props {
   disabled?: boolean
 }
 
-withDefaults(defineProps<Props>(), {
-  disabled: false
-})
+defineProps<Props>()
 
 const emit = defineEmits<{
   'update:modelValue': [value: boolean]
@@ -18,7 +16,7 @@ const handleChange = (event: Event) => {
   emit('update:modelValue', target.checked)
 }
 
-const checkboxId = computed(() => `checkbox-${Math.random().toString(36).substring(7)}`)
+const checkboxId = useId()
 </script>
 
 <template>
