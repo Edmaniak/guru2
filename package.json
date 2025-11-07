@@ -11,11 +11,11 @@
   },
   "dependencies": {
     "nuxt": "^4.2.1",
-    "vue": "latest"
+    "vue": "^3.5.24"
   },
   "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "typescript": "latest",
+    "@nuxt/devtools": "^3.0.1",
+    "typescript": "^5.9.3",
     "vue-tsc": "^2.0.0"
   }
 }
