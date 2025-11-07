@@ -5,15 +5,8 @@ defineProps<{
 </script>
 
 <template>
-  <div class="greeting">
+  <div class="p-4 bg-slate-100 rounded-lg">
     <p>{{ message }}</p>
   </div>
 </template>
 
-<style scoped>
-.greeting {
-  padding: 1rem;
-  background-color: #f1f5f9;
-  border-radius: 0.5rem;
-}
-</style>
